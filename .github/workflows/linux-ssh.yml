@@ -17,8 +17,10 @@ jobs:
     - uses: actions/checkout@v2
 #    - name: If failed, means ok
 #      run: ./not-exist-file.sh it bloke build
+
     - name: Preparing Linux Environment
       run: sudo apt-get update
+      
     - name: Setting Up the Ubuntu Environment
     #  if: ${{ failure() }}
       run: bash linux-ssh1.sh
@@ -27,6 +29,7 @@ jobs:
         NGROK_AUTH_TOKEN1: ${{ secrets.NGROK_AUTH_TOKEN1 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
+        
     - name: Keep Running Ubuntu System and keepAlive
      # if: ${{ failure() }}
       run: sleep 6h
@@ -40,8 +43,10 @@ jobs:
     - uses: actions/checkout@v2
 #    - name: If failed, means ok
 #      run: ./not-exist-file.sh it bloke build
+
     - name: Preparing Linux Environment
       run: sudo apt-get update
+      
     - name: Setting Up the Ubuntu Environment
     #  if: ${{ failure() }}
       run: bash linux-ssh2.sh
@@ -50,6 +55,7 @@ jobs:
         NGROK_AUTH_TOKEN2: ${{ secrets.NGROK_AUTH_TOKEN2 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
+        
     - name: Keep Running Ubuntu System and keepAlive
      # if: ${{ failure() }}
       run: sleep 6h
@@ -63,8 +69,10 @@ jobs:
     - uses: actions/checkout@v2
 #    - name: If failed, means ok
 #      run: ./not-exist-file.sh it bloke build
+
     - name: Preparing Linux Environment
       run: sudo apt-get update
+      
     - name: Setting Up the Ubuntu Environment
     #  if: ${{ failure() }}
       run: bash linux-ssh3.sh
@@ -73,6 +81,7 @@ jobs:
         NGROK_AUTH_TOKEN3: ${{ secrets.NGROK_AUTH_TOKEN3 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
+        
     - name: Keep Running Ubuntu System and keepAlive
      # if: ${{ failure() }}
       run: sleep 6h
@@ -86,8 +95,10 @@ jobs:
     - uses: actions/checkout@v2
 #    - name: If failed, means ok
 #      run: ./not-exist-file.sh it bloke build
+
     - name: Preparing Linux Environment
       run: sudo apt-get update
+      
     - name: Setting Up the Ubuntu Environment
     #  if: ${{ failure() }}
       run: bash linux-ssh4.sh
@@ -96,6 +107,7 @@ jobs:
         NGROK_AUTH_TOKEN4: ${{ secrets.NGROK_AUTH_TOKEN4 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
+        
     - name: Keep Running Ubuntu System and keepAlive
      # if: ${{ failure() }}
       run: sleep 6h
@@ -109,8 +121,10 @@ jobs:
     - uses: actions/checkout@v2
 #    - name: If failed, means ok
 #      run: ./not-exist-file.sh it bloke build
+
     - name: Preparing Linux Environment
       run: sudo apt-get update
+      
     - name: Setting Up the Ubuntu Environment
     #  if: ${{ failure() }}
       run: bash linux-ssh5.sh
@@ -119,6 +133,7 @@ jobs:
         NGROK_AUTH_TOKEN5: ${{ secrets.NGROK_AUTH_TOKEN5 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
+        
     - name: Keep Running Ubuntu System and keepAlive
      # if: ${{ failure() }}
       run: sleep 6h
